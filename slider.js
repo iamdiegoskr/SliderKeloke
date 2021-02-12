@@ -12,13 +12,13 @@ function nextBanner() {
     let sliderSectionFirst = document.querySelectorAll('.slider__section')[0];
 
     slider.style.marginLeft = '-200%'
-    slider.style.transition = 'all .5s'
+    slider.style.transition = 'all .8s'
 
     setTimeout(() => {
         slider.style.transition = 'none'
         slider.insertAdjacentElement('beforeend', sliderSectionFirst)
         slider.style.marginLeft = '-100%'
-    }, 500);
+    }, 800);
 
 
 }
@@ -29,15 +29,20 @@ function previousBanner() {
 
 
     slider.style.marginLeft = '0%'
-    slider.style.transition = 'all .5s'
+    slider.style.transition = 'all .8s'
 
     setTimeout(() => {
         slider.style.transition = 'none'
         slider.insertAdjacentElement('afterbegin', sliderSectionLast)
         slider.style.marginLeft = '-100%'
-    }, 500);
+    }, 800);
 }
 
 
 btnRigth.addEventListener('click', nextBanner)
 btnLeft.addEventListener('click', previousBanner)
+
+
+setInterval(() => {
+    nextBanner()
+}, 5000);

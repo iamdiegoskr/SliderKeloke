@@ -24,7 +24,18 @@ function nextBanner() {
 }
 
 function previousBanner() {
+    let sliderSections = document.querySelectorAll('.slider__section')
+    let sliderSectionLast = sliderSections[sliderSections.length - 1]
 
+
+    slider.style.marginLeft = '0%'
+    slider.style.transition = 'all .5s'
+
+    setTimeout(() => {
+        slider.style.transition = 'none'
+        slider.insertAdjacentElement('afterbegin', sliderSectionLast)
+        slider.style.marginLeft = '-100%'
+    }, 500);
 }
 
 

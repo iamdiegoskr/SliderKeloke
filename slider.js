@@ -43,6 +43,6 @@ btnRigth.addEventListener('click', nextBanner)
 btnLeft.addEventListener('click', previousBanner)
 
 
-setInterval(() => {
-    nextBanner()
-}, 5000);
+// setInterval(() => {
+//     nextBanner()
+// }, 5000);

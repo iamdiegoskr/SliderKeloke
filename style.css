@@ -24,6 +24,8 @@ main {
 }
 
 .container-slider {
+    background: #1e1e2a;
+    position: relative;
     width: 90%;
     max-width: 900px;
     overflow: hidden;
@@ -34,10 +36,11 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: .7;
+    /* filter: brightness(); */
 }
 
 .slider__section {
-    background: blue;
     width: 100%;
 }
 
@@ -48,4 +51,20 @@ main {
     /*tengo 7 imagenes entonces el ancho sera 700%,
     cada imagen de ese 700% ocupara el 100%, que seria los 900px que definimos en el contenedor padre*/
     height: 400px;
+}
+
+.btn-slider .fas {
+    position: absolute;
+    font-size: 64px;
+    color: #fff;
+    cursor: pointer;
+    top: calc(50% - 32px);
+}
+
+.btn-slider .btn-slider__next {
+    right: 12px;
+}
+
+.btn-slider .btn_slider__before {
+    left: 12px;
 }

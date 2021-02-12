@@ -55,10 +55,20 @@ main {
 
 .btn-slider .fas {
     position: absolute;
-    font-size: 64px;
-    color: #fff;
+    font-size: 48px;
+    color: #191138;
     cursor: pointer;
-    top: calc(50% - 32px);
+    top: calc(50% - 24px);
+    background: #828388;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.btn-slider .fas:hover {
+    background: #ffffff;
 }
 
 .btn-slider .btn-slider__next {
